@@ -4,8 +4,8 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript , API">
+    <meta name="description" content="This is best World News Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Muddassir Hymeed">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News App</title>
@@ -18,19 +18,19 @@
 
     <nav>
         <div class="main-nav container flex">
-            <a href="#" class="company-logo">
+            <a href="#" onclick="reload()" class="company-logo">
                 <img src="/News App/img//news_favicon.png" alt="Company Logo">
             </a>
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="hover-links nav-item" id="cricket"  onclick="onNavItemClick('cricket')">Cricket</li>
-                    <li class="hover-links nav-item" id="Finance"  onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="hover-links nav-item" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-links nav-item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
                     <li class="hover-links nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
                 </ul>
             </div>
             <div class="search-bar flex">
-                <input type="text" class="news-input" placeholder="Search latest News">
-                <button class="search-button">Search</button>
+                <input id="search-text" type="text" class="news-input" placeholder="Search latest News">
+                <button id="search-button" class="search-button">Search</button>
             </div>
         </div>
     </nav>
@@ -48,15 +48,61 @@
             <div class="card-content">
                 <h3 id="news-title">This is Title</h3>
                 <h6 class="news-source" id="news-source">End Gadget - 05 / 05 / 2024 </h6>
-                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci magni fuga beatae odit
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                    adipisci magni fuga beatae odit
                     officiis, velit voluptatem quo voluptate consequatur.</p>
             </div>
         </div>
     </template>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to <span>World News</span> your trusted source for the latest news and information from
+                    around the world. Our mission is to provide accurate, unbiased, and timely news coverage to keep our
+                    readers informed and engaged.
+                </p>
+                <p>
+                    We believe in the power of journalism to educate, inspire, and bring about positive change. Our
+                    dedicated team of experienced journalists and editors work tirelessly to bring you comprehensive
+                    coverage on a wide range of topics, including world news, politics, business, technology, health,
+                    sports, and entertainment.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">World</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Health</a></li>
+                    <li><a href="#">Sports</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@newswebsite.com</p>
+                <p>Phone: +92 3101098111</p>
+                <p>Address: Peshawar , Pakistan</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NewsWebsite. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/66c98d1aba.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
