@@ -1,5 +1,5 @@
 const API_KEY = "85680ad9cbd4412da1aca51cde3312aa";
-const url = "https://newsapi.org/v2/everything?q=";
+const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${85680ad9cbd4412da1aca51cde3312aa}`;;
 
 window.addEventListener('load' , () => fetchNews('Pakistan'));
 
