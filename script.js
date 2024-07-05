@@ -51,7 +51,7 @@ function filDataCard(cardClone , article) {
 }
 
 
-let curSelectedNav =null;
+let curSelectedNav =undefined;
 function onNavItemClick(id){
     fetchNews(id);
     const navItem = document.getElementById(id);
