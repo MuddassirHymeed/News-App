@@ -14,7 +14,6 @@
     --secondary-text-color: #577592;
     --accent-color: #2294a3;
     --accent-color-dark: #3B97D3;
-    --padding-inline-section:
 }
 
 body{
@@ -99,6 +98,10 @@ nav{
 .search-bar{
     height: 32px;
     gap: 8px;
+}
+
+.nav-item.active{
+    color: #FF5364;
 }
 
 .news-input{
